@@ -19,5 +19,11 @@ namespace BookCaféRest.Managers
 
         // Get books by filtered price
         List<Book> SearchBookPrice(int? lowPrice, int? highPrice);
+
+        // Index of books by low price
+        List<Book> BookIndexLow();
+        
+        // Index of books by high price
+        List<Book> BookIndexHigh();
     }
 }

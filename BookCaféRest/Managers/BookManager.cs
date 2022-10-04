@@ -81,6 +81,17 @@ namespace BookCaféRest.Managers
             return (highPrice is null)? booksTemp : booksTemp.Where(b => b.BookPrice <= highPrice).ToList();
         }
 
+        public List<Book> BookIndexLow()
+        {
+            return null;
+        }
+
+        public List<Book> BookIndexHigh()
+        {
+            return null;
+        }
+
+
         public Book Update(string bookTitle, int bookPrice, Book book)
         {
             Book updateBook = GetBookByTitle(bookTitle);
