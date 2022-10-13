@@ -15,5 +15,12 @@ namespace BookCaféModelLib.model
         public string BookDescription { get; set; }
         public int BookPrice { get; set; }
 
+
+
+        public override string ToString()
+        {
+            return $"Title: {BookTitle}\tAuthor: {BookAuthor}\tGenre: {BookGenre}\tPublisher: {BookPublisher}\tDescription: {BookDescription}\tPrice: {BookPrice}";
+        }
+
     }
 }
