@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace BookCaféRest.model
 {
     [Table("Book")]
-    public partial class Book
+    public partial class Books
     {
         [Key]
         [StringLength(50)]

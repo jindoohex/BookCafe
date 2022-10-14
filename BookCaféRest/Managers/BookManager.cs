@@ -6,29 +6,28 @@ namespace BookCaféRest.Managers
     {
         private static List<Book> _books = new List<Book>()
         {
-            new Book(){BookTitle="The Seven Balls", 
-                BookAuthor="Jens Dam", 
-                BookGenre="Thriller", 
-                BookPublisher="Betræk Forlaget", 
-                BookDescription="En beskrivelse...", 
+            new Book(){BookTitle="The Seven Balls",
+                BookAuthor="Jens Dam",
+                BookGenre="Thriller",
+                BookPublisher="Betræk Forlaget",
+                BookDescription="En beskrivelse...",
                 BookPrice=150},
 
-            new Book(){BookTitle="Ocean Neat", 
-                BookAuthor="Pia Krud", 
-                BookGenre="Kronik", 
-                BookPublisher="Betræk Forlaget", 
-                BookDescription="En beskrivelse...", 
+            new Book(){BookTitle="Ocean Neat",
+                BookAuthor="Pia Krud",
+                BookGenre="Kronik",
+                BookPublisher="Betræk Forlaget",
+                BookDescription="En beskrivelse...",
                 BookPrice=200},
 
-            new Book(){BookTitle="True Patriot", 
-                BookAuthor="Sønner Tue", 
-                BookGenre="Fantasy", 
-                BookPublisher="Betræk Forlaget", 
-                BookDescription="En beskrivelse...", 
+            new Book(){BookTitle="True Patriot",
+                BookAuthor="Sønner Tue",
+                BookGenre="Fantasy",
+                BookPublisher="Betræk Forlaget",
+                BookDescription="En beskrivelse...",
                 BookPrice=250},
 
         };
-
 
         public BookManager()
         {

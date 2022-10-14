@@ -7,18 +7,18 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace BookCaféRest.model
 {
-    public partial class BookCaféContext : DbContext
+    public partial class BooksCaféContext : DbContext
     {
-        public BookCaféContext()
+        public BooksCaféContext()
         {
         }
 
-        public BookCaféContext(DbContextOptions<BookCaféContext> options)
+        public BooksCaféContext(DbContextOptions<BooksCaféContext> options)
             : base(options)
         {
         }
 
-        public virtual DbSet<Book> Books { get; set; }
+        public virtual DbSet<Books> Books { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -31,7 +31,7 @@ namespace BookCaféRest.model
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Book>(entity =>
+            modelBuilder.Entity<Books>(entity =>
             {
                 entity.HasKey(e => e.Author)
                     .HasName("PK__Book__12C0B645751D6BAF");
